@@ -12,7 +12,7 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows:1fr 3fr;
+    grid-template-rows: 1fr 3fr;
 }
 
 .cabecera {
@@ -25,27 +25,27 @@ body {
 }
 
 .logotipo {
-    font-size: 36px;
+    font-size: 2.25rem; /* 36px */
     font-weight: bold;
 }
-.cabecera img{
-    width: 100px;
-    height: 100px;
+
+.cabecera img {
+    width: 6.25rem; /* 100px */
+    height: 6.25rem; /* 100px */
     object-fit: contain;
-    
 }
 
 .cabecera p {
-    margin: 5px;
+    margin: 0.3125rem; /* 5px */
 }
 
 .formulario {
-    width: 450px;
-    margin: 40px auto;
-    padding: 30px;
+    width: 28.125rem; /* 450px */
+    margin: 2.5rem auto; /* 40px */
+    padding: 1.875rem; /* 30px */
     background-color: white;
     border: 1px solid #ddd;
-    border-radius: 10px;
+    border-radius: 0.625rem; /* 10px */
     display: flex;
     flex-direction: column;
 }
@@ -54,41 +54,44 @@ body {
     text-align: center;
     margin-top: 0;
 }
-.formulario form{
+
+.formulario form {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 0.5rem; /* 8px */
 }
 
 .campo {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 0.5rem; /* 8px */
 }
 
-.campo input{
-    padding: 12px;
-    font-size: 16px;
+.campo input {
+    padding: 0.75rem; /* 12px */
+    font-size: 1rem; /* 16px */
     border: 1px solid #aaa;
-    border-radius: 8px;
+    border-radius: 0.5rem; /* 8px */
 }
 
 .formulario button {
-    margin-top: 25px;
-    padding: 12px;
+    margin-top: 1.5625rem; /* 25px */
+    padding: 0.75rem; /* 12px */
     background-color: #315bea;
     color: white;
     text-align: center;
     text-decoration: none;
     display: flex;
     justify-content: center;
-    border-radius: 5px;
+    border-radius: 0.3125rem; /* 5px */
+    border: none;
+    cursor: pointer;
 }
 
 .enlaces {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 1.25rem; /* 20px */
 }
 
 .enlaces a {
@@ -96,35 +99,35 @@ body {
     text-decoration: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) { /* 768px */
     .formulario {
         width: 80%;
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 36rem) { /* 576px */
     .login {
         grid-template-rows: 0.9fr 3fr;
     }
 
     .cabecera {
-        padding: 20px;
+        padding: 1.25rem; /* 20px */
         text-align: center;
     }
 
     .logotipo {
-        font-size: 30px;
+        font-size: 1.875rem; /* 30px */
     }
 
     .formulario {
         width: 90%;
-        margin: 25px auto;
-        padding: 20px;
+        margin: 1.5625rem auto; /* 25px */
+        padding: 1.25rem; /* 20px */
     }
 
     .enlaces {
         flex-direction: column;
-        gap: 10px;
+        gap: 0.625rem; /* 10px */
         text-align: center;
     }
 }

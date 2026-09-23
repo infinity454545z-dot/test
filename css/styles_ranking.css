@@ -11,7 +11,7 @@ body {
 .pagina {
     min-height: 100vh;
     display: grid;
-    grid-template-rows: 80px 1fr;
+    grid-template-rows: 5rem 1fr; /* 80px */
 }
 
 .barra {
@@ -19,19 +19,19 @@ body {
     border-bottom: 1px solid #ddd;
     display: flex;
     align-items: center;
-    padding: 0 30px;
+    padding: 0 1.875rem; /* 30px */
 }
 
 .logo {
-    font-size: 25px;
+    font-size: 1.5625rem; /* 25px */
     font-weight: bold;
     color: #315bea;
-    margin-right: 50px;
+    margin-right: 3.125rem; /* 50px */
 }
 
 nav {
     display: flex;
-    gap: 25px;
+    gap: 1.5625rem; /* 25px */
 }
 
 nav a {
@@ -40,35 +40,35 @@ nav a {
 }
 
 .ranking {
-    width: 900px;
-    margin: 40px auto;
+    width: 56.25rem; /* 900px */
+    margin: 2.5rem auto; /* 40px */
 }
 
 .encabezado {
     background-color: white;
     border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 25px;
+    border-radius: 0.625rem; /* 10px */
+    padding: 1.5625rem; /* 25px */
     text-align: center;
 }
 
 .encabezado select {
-    padding: 10px;
-    margin-top: 10px;
+    padding: 0.625rem; /* 10px */
+    margin-top: 0.625rem; /* 10px */
 }
 
 .tabla {
     background-color: white;
     border: 1px solid #ddd;
-    margin-top: 25px;
-    border-radius: 10px;
+    margin-top: 1.5625rem; /* 25px */
+    border-radius: 0.625rem; /* 10px */
     overflow: hidden;
 }
 
 .fila {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr 2fr;
-    padding: 20px;
+    padding: 1.25rem; /* 20px */
     border-bottom: 1px solid #ddd;
     align-items: center;
 }
@@ -86,19 +86,19 @@ nav a {
     background-color: #e8efff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) { /* 768px */
     .ranking {
         width: 90%;
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 36rem) { /* 576px */
     .barra {
         height: auto;
-        padding: 15px;
+        padding: 0.9375rem; /* 15px */
         flex-direction: column;
         align-items: flex-start;
-        gap: 15px;
+        gap: 0.9375rem; /* 15px */
     }
 
     .pagina {
@@ -107,16 +107,16 @@ nav a {
 
     nav {
         flex-direction: column;
-        gap: 8px;
+        gap: 0.5rem; /* 8px */
     }
 
     .ranking {
         width: 94%;
-        margin: 20px auto;
+        margin: 1.25rem auto; /* 20px */
     }
 
     .fila {
         grid-template-columns: 1fr;
-        gap: 8px;
+        gap: 0.5rem; /* 8px */
     }
 }

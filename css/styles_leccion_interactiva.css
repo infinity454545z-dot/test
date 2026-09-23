@@ -19,12 +19,12 @@ body {
     border-bottom: 1px solid #ddd;
     display: flex;
     align-items: center;
-    padding: 15px 30px;
-    gap: 30px;
+    padding: 0.9375rem 1.875rem; /* 15px 30px */
+    gap: 1.875rem; /* 30px */
 }
 
-.superior  a {
-    font-size: 25px;
+.superior a {
+    font-size: 1.5625rem; /* 25px */
     color: #333;
     text-decoration: none;
 }
@@ -34,21 +34,21 @@ body {
 }
 
 .progreso p {
-    margin: 0 0 5px 0;
+    margin: 0 0 0.3125rem 0; /* 5px */
 }
 
 .barra-progreso {
     width: 100%;
-    height: 12px;
+    height: 0.75rem; /* 12px */
     background-color: #ddd;
-    border-radius: 10px;
+    border-radius: 0.625rem; /* 10px */
 }
 
 .barra-progreso div {
     width: 60%;
     height: 100%;
     background-color: #315bea;
-    border-radius: 10px;
+    border-radius: 0.625rem; /* 10px */
 }
 
 .vidas {
@@ -56,16 +56,16 @@ body {
 }
 
 .vidas p {
-    margin: 3px;
+    margin: 0.1875rem; /* 3px */
 } 
 
 .ejercicio {
-    width: 750px;
-    margin: 40px auto;
+    width: 46.875rem; /* 750px */
+    margin: 2.5rem auto; /* 40px */
     background-color: white;
     border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 35px;
+    border-radius: 0.625rem; /* 10px */
+    padding: 2.1875rem; /* 35px */
 }
 
 .ejercicio h1 {
@@ -74,83 +74,78 @@ body {
 
 .frase {
     text-align: center;
-    font-size: 22px;
-    margin: 35px 0;
-}
-.frase span {
-    display:block; 
-    font-size: 0.9em; 
-    opacity: 0.8;
-
+    font-size: 1.375rem; /* 22px */
+    margin: 2.1875rem 0; /* 35px */
 }
 
 .respuesta {
-    min-height: 60px;
+    min-height: 3.75rem; /* 60px */
     border: 2px solid #bbb;
-    padding: 10px;
+    padding: 0.625rem; /* 10px */
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 0.625rem; /* 10px */
     flex-wrap: wrap;
 }
 
 .respuesta span {
     border: 1px solid #315bea;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 0.625rem; /* 10px */
+    border-radius: 0.3125rem; /* 5px */
 }
 
 .ejercicio h2 {
-    font-size: 18px;
-    margin-top: 30px;
+    font-size: 1.125rem; /* 18px */
+    margin-top: 1.875rem; /* 30px */
 }
 
 .banco {
     display: flex;
-    gap: 10px;
+    gap: 0.625rem; /* 10px */
     flex-wrap: wrap;
 }
 
 .banco button {
     background-color: white;
     border: 1px solid #aaa;
-    padding: 10px 15px;
-    border-radius: 5px;
+    padding: 0.625rem 0.9375rem; /* 10px 15px */
+    border-radius: 0.3125rem; /* 5px */
+    cursor: pointer;
 }
 
 .ejercicio a {
     display: flex;
     width: 100%;
-    margin-top: 35px;
-    padding: 14px;
+    margin-top: 2.1875rem; /* 35px */
+    padding: 0.875rem; /* 14px */
     border: none;
-    border-radius: 5px;
+    border-radius: 0.3125rem; /* 5px */
     background-color: #315bea;
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1rem; /* 16px */
     justify-content: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) { /* 768px */
     .ejercicio {
         width: 85%;
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 36rem) { /* 576px */
     .superior {
-        padding: 10px;
-        gap: 10px;
+        padding: 0.625rem; /* 10px */
+        gap: 0.625rem; /* 10px */
     }
 
     .ejercicio {
         width: 92%;
-        margin: 20px auto;
-        padding: 20px;
+        margin: 1.25rem auto; /* 20px */
+        padding: 1.25rem; /* 20px */
     }
 
     .frase {
-        font-size: 18px;
+        font-size: 1.125rem; /* 18px */
     }
 }

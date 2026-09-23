@@ -11,7 +11,7 @@ body {
 .pagina {
     min-height: 100vh;
     display: grid;
-    grid-template-rows: 80px 1fr;
+    grid-template-rows: 5rem 1fr; /* 80px */
 }
 
 .barra {
@@ -19,19 +19,19 @@ body {
     border-bottom: 1px solid #ddd;
     display: flex;
     align-items: center;
-    padding: 30px;
+    padding: 1.875rem; /* 30px */
 }
 
 .logo {
-    font-size: 25px;
+    font-size: 1.5625rem; /* 25px */
     font-weight: bold;
     color: #315bea;
-    margin-right: 50px;
+    margin-right: 3.125rem; /* 50px */
 }
 
 nav {
     display: flex;
-    gap: 25px;
+    gap: 1.5625rem; /* 25px */
 }
 
 nav a {
@@ -40,14 +40,14 @@ nav a {
 }
 
 .curso {
-    padding: 35px;
+    padding: 2.1875rem; /* 35px */
 }
 
 .encabezado {
     background-color: white;
-    padding: 25px;
+    padding: 1.5625rem; /* 25px */
     border: 1px solid #ddd;
-    border-radius: 10px;
+    border-radius: 0.625rem; /* 10px */
 }
 
 .encabezado a {
@@ -56,56 +56,55 @@ nav a {
 }
 
 .unidad {
-    margin-top: 25px;
+    margin-top: 1.5625rem; /* 25px */
     background-color: white;
     border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 25px;
+    border-radius: 0.625rem; /* 10px */
+    padding: 1.5625rem; /* 25px */
 }
 
 .lecciones {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 0.9375rem; /* 15px */
 }
 
 .leccion {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem; /* 20px */
     border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
+    border-radius: 0.5rem; /* 8px */
+    padding: 1.25rem; /* 20px */
 }
 
 .estado {
-    font-size: 28px;
+    font-size: 1.75rem; /* 28px */
 }
-
 
 .leccion a {
     display: inline-block;
-    margin-top: 10px;
-    padding: 8px 20px;
+    margin-top: 0.625rem; /* 10px */
+    padding: 0.5rem 1.25rem; /* 8px 20px */
     background-color: #315bea;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 0.3125rem; /* 5px */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) { /* 768px */
     .curso {
-        padding: 25px;
+        padding: 1.5625rem; /* 25px */
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 36rem) { /* 576px */
     .barra {
-        padding: 15px;
+        padding: 0.9375rem; /* 15px */
         height: auto;
         flex-direction: column;
         align-items: flex-start;
-        gap: 15px;
+        gap: 0.9375rem; /* 15px */
     }
 
     .pagina {
@@ -114,11 +113,11 @@ nav a {
 
     nav {
         flex-direction: column;
-        gap: 8px;
+        gap: 0.5rem; /* 8px */
     }
 
     .curso {
-        padding: 15px;
+        padding: 0.9375rem; /* 15px */
     }
 
     .leccion {
