@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+}
+
+.login {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr 3fr;
+}
+
+.cabecera {
+    background-color: #315bea;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logotipo {
+    font-size: 36px;
+    font-weight: bold;
+}
+.cabecera img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    
+}
+
+.cabecera p {
+    margin: 5px;
+}
+
+.formulario {
+    width: 450px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario h1 {
+    text-align: center;
+    margin-top: 0;
+}
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.campo input{
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+}
+
+.formulario button {
+    margin-top: 25px;
+    padding: 12px;
+    background-color: #315bea;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.enlaces {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.enlaces a {
+    color: #315bea;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .formulario {
+        width: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+    .login {
+        grid-template-rows: 0.9fr 3fr;
+    }
+
+    .cabecera {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .logotipo {
+        font-size: 30px;
+    }
+
+    .formulario {
+        width: 90%;
+        margin: 25px auto;
+        padding: 20px;
+    }
+
+    .enlaces {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}

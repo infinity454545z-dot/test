@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="css/styles_registro.css">
+</head>
+<body>
+
+    <main class="registro">
+
+        <header class="cabecera">
+            <img src="img/logo_azul.png" alt="Logo">
+            <div class="logotipo">LingoLeon</div>
+            <p>Aprende Inglés, Alemán y Chino gratis y de forma divertida</p>
+        </header>
+
+        <section class="formulario">
+            <h2>Registrarse</h2>
+
+            <form action="index.html" method="get">
+
+                <div class="campo">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" required>
+                </div>
+
+                <div class="campo">
+                    <label for="usuario">Nombre de usuario</label>
+                    <input type="text" id="usuario" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <div class="campo">
+                    <label for="contrasenia">Contraseña</label>
+                    <input type="password" id="contrasenia" required>
+                </div>
+
+                <div class="campo">
+                    <label for="repetir">Repetir contraseña</label>
+                    <input type="password" id="repetir" required>
+                </div>
+
+                <button type="submit">Crear cuenta</button>
+
+            </form>
+
+            <a class="volver" href="index.html">Volver al inicio</a>
+        </section>
+
+    </main>
+
+</body>
+</html>
